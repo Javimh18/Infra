@@ -1,0 +1,8 @@
+Upcloud Region Name,Region Code,Mean,Median,Min,Max,Test 1,Test 2,Test 3,Test 4,Test 5,Test 6,Test 7,Test 8,Test 9,Test 10,Test 11,Test 12,Test 13,Test 14
+Germany (Frankfurt),de-fra1,93,89,83,130,88,130,89,83,84,97,97,84,94,98,97,89,84,88
+Finland (Helsinki),fi-hel1,146,144,135,175,151,142,138,156,150,145,143,138,175,143,144,150,135,135
+Netherlands,nl-ams1,90,89,81,101,96,86,98,85,86,85,88,90,101,97,91,81,82,90
+Singapore (Singapore),sg-sin1,510,509,500,520,514,511,503,500,520,504,513,501,503,507,515,519,503,520
+United Kingdom (London),uk-lon1,112,84,76,400,76,400,84,81,109,86,83,132,78,81,90,81,84,103
+United States (Chicago),us-chi1,277,237,226,523,241,253,235,230,523,238,236,263,226,231,496,227,239,233
+United States (San Jose),us-sjo1,353,341,323,527,347,341,332,348,331,331,340,527,346,342,378,333,323,328
