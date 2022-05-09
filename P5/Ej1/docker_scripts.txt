@@ -1,0 +1,14 @@
+-- Descargar la imagen del docker
+docker pull mariadb
+
+-- Creación de la red p5network, para los contenedores que se van a desplegar
+docker network create p5network
+
+-- Generación del contenedor de la base de datos mapeando los puertos y los volumenes necesarios
+docker run --detach --network p5network --name contenedor-mariadb -v ~/mdbdata/mdb55:/var/lib/mysql -p 2280:80 -p 2222:22 --env MARIADB_USER=javier --env MARIADB_PASSWORD=javier --env MARIADB_ROOT_PASSWORD=javier  mariadb:latest
+
+-- Ejecución del contenedor que actua como cliente
+docker run -it --network p5network --rm mariadb mysql -hcontenedor-mariadb -uroot -p
+
+-- Ejecución de contenedor ya creado
+docker exec -it contenedor-mariadb mariadb mysql -hcontenedor-mariadb -uroot -p
